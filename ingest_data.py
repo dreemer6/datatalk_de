@@ -22,6 +22,7 @@ def main(params):
     # Convert parquet file to csv
     pd.read_parquet(parquet_name).to_csv(csv_name)
 
+    # Connect to the database
     engine = create_engine(f'postgresql://{user}:{password}@{host}:{port}/{db}')
     engine.connect()
 
