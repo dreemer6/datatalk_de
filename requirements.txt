@@ -1,0 +1,4 @@
+SQLAlchemy==1.4.39
+pyarrow==4.0.1
+pandas==1.4.3
+psycopg2
